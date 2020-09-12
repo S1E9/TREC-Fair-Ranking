@@ -1,0 +1,101 @@
+
+Tasks:
+re-ranking: sorting a query-dependent list of documents. Each query is accompanied by a subset of the
+collection to sort.
+retrieval: sorting the corpus of documents - intended to examine how important it is to have a
+high-quality candidate pool for fairness interventions.
+
+The task is to return a ranking of documents that is fair and relevant. Some queries are repeated many times.
+
+
+# corpus for re-ranking task
+=== corpus-subset-for-queries.jsonl
+{"entities":[],"magId":"2558641003",
+    "journalVolume":"16",
+    "journalPages":"",
+    "pmid":"27912738",
+    "fieldsOfStudy":["Medicine"],
+    "year":2016,
+    "outCitations":["e156993c7105944de06a0b82c113b6883377fdb5","a3c6c8316aa0b508c36664adc6866bceca978c7a","ae7b10d955b042e184fc7739f4964b244e8a3930","9e45ff2b9fef36560a92fae71ca8e99efd875c3a","c9d32c1af0ac13c06befd9021a24ddc3fc1ca80d","a36eb06c4c10588fe064fbc724b0a188ce29408d","4f5d4c8ef0d4030629cf4961edc9ca882fdaeb7c","6e5b843a63c69aef8c306aad454af8a3182ba118","7dc20a3e601bce99d5b7856447a9f582fc0548f9","924f2d24a33bdd83a365cbfebf6231c151d3e9ab","f43454778b103a29d4fbe69f25464518945a1649","b61a82e94ed3ab6150de9babbdc2c99442c4d3cf","bd618d08675ceeb81f2e4d5578a68c143d89d1ab","20d3a0fd7addc9e3c57745a244353b193071e965","68b88a41347707bd4e1a3bda8fc89cd1325ea604","4325b8f0aaba31496412feeb42c41eb3351475f1","2fa801e1aa527fff87197ee394dfe17a111fcc16","2b3d0370c3b2df5101e4a84c8a81e0888069ce1d","5b7242ac3f0f161574880ef6a513006b8319e919","ccfe943728b0d0c1c26eefe435efac005e4416e2","4b27205734051a14d3b66707229b4670ad9082af","5bc738507fda0ae5fdf90c95efea477a60dda174","f51ec4dfc1127f0aa6f1cb287e55eecae1adb75f","30f8b72a1fc45ddaffa95cd63f3659cd942d5ec3","0bb1f7f6d520c8c9e7d3623a9568264a13c2c84f","78169064f56af88c851bab6d13b2e4ca53f35eb6","685e7fb9e208ead122326877e7055a3524cc0c1d","bd33916225d23a8855a1e67ae73321d7b70fcd0c","23321e05628fb3fda9f75cfbd1aab050fe2070ae","0908b42f873989d7701f44b3400db06c2d774e81","45271ad8c00f86261d8015a54ddfaf7298f070fd","a16fe8594dfe9cfc5d81bfa1e865ffdfadab5ee2","9d620dacacaae752ec1897d588039b880bdd711d","f53b00437d4cb9cd11d85de7ff85de9482c06a7b","c8b509995cb6c6f5dd31e639102b65b10d558785","cf75d5341d255b0fb404c92abd23aba8addb8b5a","00058d4a51ff25c898cf2475d8166305233bda26","df76a250c761e8034cff45d8c0a324a885e9e3e1","9257e881761a6698804ddfcca2dcb5d9096c7ac3","64cf352605fce582c9d04a651a6b4a744e960e11","eb89c2cb72a8c628ac161dfee94728ee10418423","da87846968f8105c8f1d35c3da90df6db9a6daf4","3d33f028d00fa73d7604265d8d80b5df8a0f2b3c","2bdc1154bc917d935fd4e6a7c1d082e3913ae81f","22e6b0616db723a58d2bda69170ce65b31a9f296","5f6200ed803de767bc98b354a3628695fa4013ae","c999cfb9c82b042241a0dacd49a07c2c3ffb20c7","bc256c14a504eb1a8163b7cffb4b3328b81c7d72","0e3cbe1d0be96021d7fa06d1c0eb53943df5b3ff","4fe8276f6c2d618d9612e59a3a2916aeb76657a1","369e069edb530694e7439100fd87c64ebe78c802","b3d7e97456ecb4d8b7e928103a57cfa8f67e7d58","7e48067033d43079546e6088a47a0856a4075b4d","ec6ee142635173c646955dcfd5ad03b8b2bada65","28cb03a0c9c9c435f9fe3b0a9c4f55ae1eb99b43","fe8dfaf59b593ecda56d14b0b965caa53078eb8c","e1b49ee259ba226663882c2bc41bd77671571a3a","1eb0ee91e959d671dfb5a1bce35e1ba807ff36c9","b69922f976b02898cfb6ee2383ffc8416d5c1391","f34bfd79f4b4aeb1d6cff0008967fd9f6f0e6fcb"],
+    "s2Url":"https://semanticscholar.org/paper/ff8df0745136fb183ea72b783ff38f8a7ad5ceec",
+    "s2PdfUrl":"","id":"ff8df0745136fb183ea72b783ff38f8a7ad5ceec",
+    "authors":[
+        {"name":"Mohammad Raish","ids":["5453559"]},
+        {"name":"Ajaz Ahmad","ids":["143661011"]},
+        {"name":"Khalid M. Alkharfy","ids":["6842569"]},
+        {"name":"Syed Rizwan Ahamad","ids":["5108409"]},
+        {"name":"Kazi Mohsin","ids":["4850426"]},
+        {"name":"Fahad Ibrahim Al-Jenoobi","ids":["32234392"]},
+        {"name":"Abdullah Mohammed Al-Mohizea","ids":["1399082370"]},
+        {"name":"Mushtaq Ahmad Ansari","ids":["4636440"]}
+        ],
+    "journalName":"BMC Complementary and Alternative Medicine",
+    "paperAbstract":"BackgroundFulminant hepatic failure (FHF) is clinical syndrome with very poor prognosis and high mortality there is urgent need for the development of safe and non-toxic hepatoprotective agents for the adequate management of hepatitis. Hepatoprotective effect of the Lepidium sativum ethanolic extract (LSEE) was assessed by D-galactosamine-induced/lipopolysaccharide (400 mg/kg and 30 μg/kg) liver damage model in rats.MethodsHepatoprotective activity of LSEE (150 and 300 mg/kg) and silymarin on D-GalN/LPS induced FHF in rat was assessed using several liver function enzyme parameters. Antioxidant properties as antioxidant stress enzymes were assessed in hepatic Liver as well as mRNA expression of cytokines genes such as TNF-α, IL-6, and IL-10 and stress related genes iNOS and HO-1 were determined by RT-PCR. Protein expression of apoptotic genes were evaluated through western blot. MPO and NF-κB DNA-binding activity was analyzed by ELISA. The magnitude of hepatic impairment was investigated through histopathological evaluation.ResultsMarked amelioration of hepatic injuries by attenuation of serum and lipid peroxidation has been observed as comparable with silymarin (25 mg/kg p.o). D-GalN/LPS induced significant decrease in oxidative stress markers protein level, and albumin. LSEE significantly down-regulated the D-GalN/LPS induced pro-inflammatory cytokines TNFα and IL-6 mRNA expression in dose dependent fashion about 0.47 and 0.26 fold and up-regulates the IL-10 by 1.9 and 2.8 fold, respectively. While encourages hepatoprotective activity by down-regulating mRNA expression of iNOS and HO-1. MPO activity and NF-κB DNA-binding effect significantly increased and was mitigated by LSEE in a dose-dependent style as paralleled with silymarin.ConclusionOur data suggests that pretreatment of LSEE down regulates the caspase 3 and up-regulates the BCl2 protein expression. The above findings revealed that Lepidium sativum has significant hepatoprotective activity.",
+    "inCitations":["4d43cadb16faa81242a376119098b3ee03b2ed29","bf10386d6a5118d956596981334fa896004ceea9","a9913fe2c79f87987a74ef21ef50e3303d20e688","548e44569874e182508750ce3f633003b04934db","c77b9e4b90e10f24a5c6a28cf4fa4bd1d471bb47","df99ba14d529e2bb0e3b9e3246659fe86d75eaf3","c7db81c9ea769aa2850b2c39f65c3c1e26d1a191","f74dbad20431ef50689411fd0a9bfd204d94d68b","612efef1bac4c975c3b8d577540c1b83974a19a7","68ee69cb00da10a6d4a24f77250e41c3aa460d65","12b32c1ae14ef00fb1c2aaf37bc4e53e8502407a","164c1b910294ee2e3a4eaa9423ee34128fe19f78","4cc6a6d744783bfb685ec0c2175a57a10665be19","106ea4335c8287f87544770d24bfa17e91592e44","3c1775c7fad8382b2a98b7ad38135fa01fb38c73","acf81e468539bfc973101be7fd40ca87fe929336"],
+    "pdfUrls":["https://bmccomplementalternmed.biomedcentral.com/track/pdf/10.1186/s12906-016-1483-4"],
+    "title":"Hepatoprotective activity of Lepidium sativum seeds against D-galactosamine/lipopolysaccharide induced hepatotoxicity in animal model",
+    "doi":"10.1186/s12906-016-1483-4",
+    "sources":["Medline"],
+    "doiUrl":"https://doi.org/10.1186/s12906-016-1483-4",
+    "venue":"BMC Complementary and Alternative Medicine"
+}
+
+
+# ground truth evaluation:
+=== TREC-Fair-Ranking-training-sample.json
+- 200 queries
+{"qid": 5438, 
+    "query": "cloud computing", 
+    "frequency": 5.70942816904982e-05, 
+    "documents": [{"doc_id": "3e19046c665867bbe557685da60738a40738010a", "relevance": 0}, 
+    {"doc_id": "7ef08f1fa127af817cdfd9d3bd00bdf60e32143b", "relevance": 0}, 
+    {"doc_id": "ec13c3e7119191802e6f5783d297fe7a5a05293e", "relevance": 0}, 
+    {"doc_id": "8fc928bb430d3f72ac876ca156042ad1860acacd", "relevance": 0}, 
+    {"doc_id": "b2fdee22aa02477292b858fbafcb418932732bce", "relevance": 1}, 
+    {"doc_id": "8466964cf0884351c3e1b8444b5d71e64eb69dd6", "relevance": 0}, 
+    {"doc_id": "5dec44c59ddf5b18b242fce52c00cf47c40e6e2e", "relevance": 0}, 
+    {"doc_id": "1f1946887c8be228864ee23374bc0b427abf0884", "relevance": 0}, 
+    {"doc_id": "1f7190fc294246f83f1f331cc51e3264851d0d36", "relevance": 0}, 
+    {"doc_id": "33e77edcd42960bc1ed931ada45b9aa8d0e60e16", "relevance": 0}, 
+    {"doc_id": "325f4787a40c14518529a64332b801e6f53b22d7", "relevance": 0}, 
+    {"doc_id": "4f6577ead70ef97d620dec986cf054ae4a05035d", "relevance": 0}, 
+    {"doc_id": "3861839d05cb39ec928590b169f08a5c119fb56f", "relevance": 0}, 
+    {"doc_id": "955ef754cf9a7480383d46197232792afdf0b691", "relevance": 1}, 
+    {"doc_id": "93a96e0f68038fbbe70f80952632e8f0770af56e", "relevance": 0}, 
+    {"doc_id": "379f897fa771cc8fecddac7e982c6fb0a3fffb86", "relevance": 0}, 
+    {"doc_id": "3d9c9982b639be42e97c1d0dc4b5ce74d163f064", "relevance": 0}, 
+    {"doc_id": "20cca03bbdbd83d321a3939694ae9b41f6b8e66d", "relevance": 0}, 
+    {"doc_id": "10da56ca968d4e862d9071246790e930660438d4", "relevance": 0}, 
+    {"doc_id": "11e4e71b13860045fa9abff5ea227463d0e7562b", "relevance": 0}, 
+    {"doc_id": "04bc9c61c81c9125e39a6c52bee56f794e463a6f", "relevance": 0}, 
+    {"doc_id": "c50a7f1850d1770fe728b8e42200e463ca669896", "relevance": 0}, 
+    {"doc_id": "af9bbea473e72fcbef487f3205e3f252a5ac8a3a", "relevance": 0}, 
+    {"doc_id": "70f3a58b0fc6916c2e6616bfbae5758c00408894", "relevance": 0}, 
+    {"doc_id": "993db6e50adc33307896403c83ef10399883454f", "relevance": 0}, 
+    {"doc_id": "cffd51ac65dddbc4b49133e9a943cb6add05827e", "relevance": 0}, 
+    {"doc_id": "a9d11c8371a3608aab9996c742e7c12bd3562b25", "relevance": 0}, 
+    {"doc_id": "c4e85963c9461f7b1fb752acee5275a4545314b7", "relevance": 0}, 
+    {"doc_id": "b6b9e1943c9e2e7ca09c28cdc50c25b3918f3735", "relevance": 0}, 
+    {"doc_id": "7964791a1dab49340b55672a6cc3c176f517831b", "relevance": 1}, 
+    {"doc_id": "e27d5122a0ee36d82d3d4b64647134d19e156189", "relevance": 0}]
+}
+
+
+# metadata for papers
+=== corpus-subset-for-queries.papers.csv
+paper_sha	paper_title	paper_year	paper_venue	n_citations	n_key_citations
+ff8df0745136fb183ea72b783ff38f8a7ad5ceec	Hepatoprotective activity of Lepidium sativum seeds against D-galactosamine/lipopolysaccharide induced hepatotoxicity in animal model	2016.0	BMC Complementary and Alternative Medicine	16.0	
+770e91f0ea16d4318ed7f4fc77081a5b4a51696f	The Flynn effect and memory function	2010.0	Journal of clinical and experimental neuropsychology	23.0	
+
+# Authors and their positions
+=== corpus-subset-for-queries.paper_authors.csv
+paper_sha	corpus_author_id	position
+ff8df0745136fb183ea72b783ff38f8a7ad5ceec	5453559	1
+ff8df0745136fb183ea72b783ff38f8a7ad5ceec	143661011	2
+ff8df0745136fb183ea72b783ff38f8a7ad5ceec	6842569	3
+
+# metadata about the authors of the papers.
+=== corpus-subset-for-queries.authors.csv
+corpus_author_id	name	num_citations	num_papers	i10	h_index	h_class
+50240353	Badder Marzocchi	4653	522	102	30	H
+26971991	Patrick Fontana	133	72	4	7	L
